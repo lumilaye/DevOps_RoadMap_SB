@@ -6,9 +6,9 @@ Repo para almacenar apuntes, ejemplos y proyectos de práctica del stack tecnol�
 
 ## Secciones 
 
-* Lenguajes de programación 
+* 1 - Lenguajes de programación 
   * **Node js**
-* Conceptos importantes de OS
+* 2 - Conceptos importantes de OS
    * **Hilos y concurrencia**
    * **Sockets**
    * **POSIX**
@@ -16,19 +16,19 @@ Repo para almacenar apuntes, ejemplos y proyectos de práctica del stack tecnol�
    * **I/O Management**
    * **Virtualización**
    * **File systems**
-* Manejo de servidores
+* 3 - Manejo de servidores
   * **Sistemas operativos**
   * **Herramientas de terminal**
-* Networking, seguridad y protocolos
-* Web servers
-* Infraestructura como código
+* 4 - Networking, seguridad y protocolos
+* 5 - Web servers
+* 6 - Infraestructura como código
   * **Contenedores**
   * **Gestión de configuración**
   * **Orquestación de contenedores**
   * **Aprovisionamiento de infraestructura**
-* Herramientas CI/CD
-* Monitoreo de insfraestructura
-* Monitoreo de aplicaciones
-* Gestión de registros
-* Proveedores de nube
-* Patrones de dise;o de nube
+* 7 - Herramientas CI/CD
+* 8 - Monitoreo de insfraestructura
+* 9 - Monitoreo de aplicaciones
+* 10 - Gestión de registros
+* 11 - Proveedores de nube
+* 12 - Patrones de diseño de nube
