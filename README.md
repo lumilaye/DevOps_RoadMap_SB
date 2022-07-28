@@ -1,6 +1,6 @@
 #  DevOps RoadMap SB
 
-Repo para almacenar apuntes, ejemplos y proyectos de practica del stack tecnológico DevOps de SB.
+Repo para almacenar apuntes, ejemplos y proyectos de práctica del stack tecnológico DevOps de SB.
 
 ***
 
@@ -21,14 +21,14 @@ Repo para almacenar apuntes, ejemplos y proyectos de practica del stack tecnoló
   * **Herramientas de terminal**
 * Networking, seguridad y protocolos
 * Web servers
-* Infraestructura como codigo
+* Infraestructura como código
   * **Contenedores**
-  * **Gestion de configuracion**
-  * **Orquestacion de contenedores**
+  * **Gestión de configuración**
+  * **Orquestación de contenedores**
   * **Aprovisionamiento de infraestructura**
 * Herramientas CI/CD
 * Monitoreo de insfraestructura
 * Monitoreo de aplicaciones
-* Gestion de registros
+* Gestión de registros
 * Proveedores de nube
 * Patrones de dise;o de nube
