@@ -49,3 +49,40 @@ set smartindent # Enable smart-indent
 set smarttab # Enable smart-tabs
 set softtabstop=4 # Number of spaces per Tab
 ```
+
+## Ejecutar script 
+
+* Asignar permisos --> chmod =x nombredelarchivo.sh
+* Ejecución
+    * bash nombredelarchivo.sh
+    * ./nombredelarchivo.sh
+* Validar que el nombre del script no existe o se encuentra reservado
+    * type: nos indica tipo y ubicación
+    * type -a : todos los archivos encontrados
+    * type -t : tipo de archivo
+
+<br>
+
+## Declaración de Variables y Alcance en Bash Shell
+
+**Variables de entorno**:
+Ayudan a obtener infromacion del sistema, almacenar informacion temporal y modificar su informacion. Existen 2 tipos:
+
+*   Variables Globales: Son visibles desde el shell que lo creo o desde cuaquier hijo de esa shell.
+
+*   Variables Locales: Son visibles solo desde el shell que la creo.
+
+**Variable Persistente**: 
+Para crear una de estas es necesario introducirla en el archivo /etc/profile pero en el caso de los derivados debian si revisamos un poco el script nos damos cuenta que llama a otro archivo llamado /etc/bash.bashrc en el cual podemos crear las variables de entorno persistentes.
+
+Por eso no funciona llamar la variable declarada en /etc/profile desde un shell
+
+<br>
+
+**Variables de usuario**
+
+Son las variables que se corren dentro de un script como en cualquier programa de computadora C, C++ o Java
+
+**Variable global**: Se puede usar desde otro script siempre y cuando sea llamado desde el script que contiene la variable.
+
+**Variable local**: Solo tiene alcance en el script que la creo.
