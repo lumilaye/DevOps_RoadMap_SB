@@ -1,4 +1,0 @@
-mongo
-exit
-mongo
-exit
