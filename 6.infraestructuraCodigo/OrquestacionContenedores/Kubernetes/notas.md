@@ -74,4 +74,42 @@ Nodos == Minions
 
 Todos los nodos y masters están conectados a una red física para poder hablarsen entre sí.
 
+---
+## Componentes principales de Kubernetes
 
+**Node:** Servidor simp[le o maquina virtual.
+
+**Pod:** 
+* Componente basico o unidad mas pequeña de kubernetes
+* Es la abstracción de un contenedor de docker
+* Usualmente se usa un pod por cada aplicación
+* Cada Pod recibe una dirección IP y cada pod puede comunicarse con los otros Pods usando esta dirección IP 
+* Cuando un Pod muere y se vuelve a crear, se le asigna una dirección IP nueva
+  
+**Service:**
+* Es una estatica o permanente dirección IP que se le puede asignar a los pods 
+* El cilo de vida de los Pos y los Service no estan conectados y son independientes el uno del otro
+* Load balancer integrado
+
+**Ingress:**
+* Se encarga de enrutar las solicitudes de cliente, la solicitud primero pasa por el ingress y este hace el reenvio al service
+
+**Config Map:**
+* Confioguración externa de las aplicaciones 
+* ConfigMap es solo para uso de datos no confidenciales 
+
+**Secret:**
+* Es similar a configMap pero la diferencia esta en que  este se usa para datos privados o secretos, como credenciales
+
+**Volume:**
+* Vincula un almacenamiento fisico con un Pod
+* El almacenamiento puede estar en una maquina local o en el mismo server nodo donde el pod esta corriendo
+
+**Deployment:**
+* Especifica cuantas replicas se crearan
+* Define si se escala hacia arriba o haci abajo 
+* Abstracción de los Pods que resulta mas convenientes para la interacción con las replicas y para hacer otras configuraciones
+
+**STATEFULSET:**
+* Este componente esta destinado especificamente para aplicaciones como bases de datos 
+* (las bases de datos son comunmente hosteadas fuera del cluster de kubernetes por que trabajarlo dentro del cluster resulta bastante tedioso)
