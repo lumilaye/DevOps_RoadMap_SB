@@ -109,7 +109,34 @@ Todos los nodos y masters están conectados a una red física para poder hablars
 * Especifica cuantas replicas se crearan
 * Define si se escala hacia arriba o haci abajo 
 * Abstracción de los Pods que resulta mas convenientes para la interacción con las replicas y para hacer otras configuraciones
+* Un template para crear Pods
 
 **STATEFULSET:**
 * Este componente esta destinado especificamente para aplicaciones como bases de datos 
 * (las bases de datos son comunmente hosteadas fuera del cluster de kubernetes por que trabajarlo dentro del cluster resulta bastante tedioso)
+  
+---
+## Configuración de Kubernetes
+
+Cada archivo de configuración en Kubernetes tiene 3 partes:
+
+1. Metadata - Nombre del componente y sus partes
+2. Espoecificación - pones todos los tipos de configuración que deseas aplicar para tu componente 
+3. Status - Generado y a'adido automaticamente por kubernetes, kubernetes siempre compara cual es el status deseado con el estado actual del componente, si estos estados son diferentes kubernetes sabe que debe arreglarlo 
+
+```yaml
+## Declaras que quieres crear
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+    nginx-deployment
+    labels: ...
+
+spec:
+    replicas: 2
+    selector: ...
+    template: ...
+
+```
+
