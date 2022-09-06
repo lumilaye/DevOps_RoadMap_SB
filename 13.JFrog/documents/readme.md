@@ -1,10 +1,6 @@
 
 # ERROR:
 
-## **Introducción a Kubernetes**
-
-***Conceptos clave de contenedores:***
-
 Actualmente nos encontramos configurando un proyecto que debe ser desplegado en jfrog, pero evidenciamos que está ejecutando un pipeline con la configuración de un proyecto de node. Adjunto url del nodo.
 
 
